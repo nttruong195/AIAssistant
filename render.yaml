@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: finance-calculator-api
+    env: java
+    rootDir: backend
+    buildCommand: ./gradlew bootJar
+    startCommand: java -jar build/libs/finance-calculator.jar
+    envVars:
+      - key: AI_GEMINI_API_KEY
+        sync: false
+      - key: AI_GROQ_API_KEY
+        sync: false
+      - key: AI_OPENROUTER_API_KEY
+        sync: false
+      - key: APP_CORS_ALLOWED_ORIGINS
+        value: https://your-app.vercel.app
