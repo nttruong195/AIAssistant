@@ -174,4 +174,118 @@ public class AiFallbackService {
                 """.formatted(position, requirements);
         return streamComplete(prompt);
     }
+
+    public SseEmitter optimizeLinkedin(String profileText) {
+        String prompt = """
+                Bạn là chuyên gia tối ưu hóa LinkedIn với kinh nghiệm giúp hàng trăm người đi làm tại Việt Nam.
+                Hãy phân tích profile LinkedIn sau và đưa ra gợi ý cải thiện chi tiết bằng tiếng Việt:
+
+                **Profile:**
+                %s
+
+                **Yêu cầu phân tích:**
+                1. **Headline:** Gợi ý viết lại (3-5 phương án)
+                2. **About/Summary:** Đánh giá và gợi ý cải thiện
+                3. **Kinh nghiệm:** Cách mô tả impact bằng số liệu
+                4. **Kỹ năng:** Top skills nên thêm vào
+                5. **Tối ưu SEO LinkedIn:** Từ khóa quan trọng cần có
+                6. **Điểm mạnh cần giữ lại**
+                7. **Điểm yếu cần cải thiện ngay**
+                8. **Điểm số tổng thể /100 và lộ trình cải thiện**
+                """.formatted(profileText);
+        return streamComplete(prompt);
+    }
+
+    public SseEmitter salaryNegotiation(String currentOffer, String candidateInfo, String marketInfo) {
+        String prompt = """
+                Bạn là chuyên gia đàm phán lương với kinh nghiệm tư vấn cho người đi làm tại Việt Nam.
+                Hãy tư vấn chiến lược đàm phán lương cho tình huống sau bằng tiếng Việt:
+
+                **Offer hiện tại:**
+                %s
+
+                **Thông tin ứng viên:**
+                %s
+
+                **Thông tin thị trường / kỳ vọng:**
+                %s
+
+                **Yêu cầu tư vấn:**
+                1. **Đánh giá offer:** Có phù hợp thị trường không?
+                2. **Mức lương nên đề xuất:** Khoảng và lý do
+                3. **Kịch bản đàm phán:** Script cụ thể nên nói gì
+                4. **Câu hỏi nên hỏi HR/nhà tuyển dụng**
+                5. **Điểm mạnh để leverage trong đàm phán**
+                6. **Những gì KHÔNG nên nói**
+                7. **Thời điểm và cách thức đàm phán tốt nhất**
+                """.formatted(currentOffer, candidateInfo, marketInfo);
+        return streamComplete(prompt);
+    }
+
+    public SseEmitter interviewPrep(String jobDescription, String candidateBackground) {
+        String prompt = """
+                Bạn là chuyên gia luyện phỏng vấn với kinh nghiệm coaching tại Việt Nam.
+                Hãy tạo bộ câu hỏi phỏng vấn và gợi ý trả lời dựa trên thông tin sau bằng tiếng Việt:
+
+                **Job Description:**
+                %s
+
+                **Background ứng viên:**
+                %s
+
+                **Yêu cầu:**
+                1. **5 câu hỏi kỹ thuật/chuyên môn** (kèm gợi ý trả lời)
+                2. **5 câu hỏi behavioral** dạng STAR (kèm gợi ý)
+                3. **3 câu hỏi tình huống** thường gặp trong ngành
+                4. **Câu hỏi nên hỏi ngược lại nhà tuyển dụng** (3-5 câu)
+                5. **Những điểm cần chuẩn bị kỹ nhất** dựa trên JD
+                6. **Red flags cần tránh** trong phỏng vấn
+                """.formatted(jobDescription, candidateBackground);
+        return streamComplete(prompt);
+    }
+
+    public SseEmitter performanceReview(String achievements, String role, String period) {
+        String prompt = """
+                Bạn là chuyên gia viết performance review chuyên nghiệp tại môi trường doanh nghiệp Việt Nam.
+                Hãy viết self-review hoàn chỉnh dựa trên thông tin sau bằng tiếng Việt:
+
+                **Vị trí / Vai trò:** %s
+
+                **Kỳ đánh giá:** %s
+
+                **Thành tích / Công việc đã làm:**
+                %s
+
+                **Yêu cầu:**
+                1. **Tóm tắt thành tích nổi bật** (có số liệu cụ thể nếu có)
+                2. **Đóng góp cho team / công ty**
+                3. **Kỹ năng đã phát triển trong kỳ**
+                4. **Thách thức đã vượt qua**
+                5. **Mục tiêu cho kỳ tiếp theo** (SMART goals)
+                6. **Đề xuất / mong muốn phát triển**
+                Viết theo phong cách tự tin, chuyên nghiệp, có dẫn chứng cụ thể.
+                """.formatted(role, period, achievements);
+        return streamComplete(prompt);
+    }
+
+    public SseEmitter summarizeContract(String contractText) {
+        String prompt = """
+                Bạn là chuyên gia luật lao động tại Việt Nam với kinh nghiệm tư vấn hợp đồng lao động.
+                Hãy tóm tắt và phân tích hợp đồng sau bằng tiếng Việt:
+
+                **Nội dung hợp đồng:**
+                %s
+
+                **Yêu cầu phân tích:**
+                1. **Thông tin cơ bản:** Lương, thời hạn, loại hợp đồng
+                2. **Quyền lợi chính:** BHXH, phép năm, thưởng, phụ cấp
+                3. **Điều khoản cần chú ý:** Thử việc, thông báo nghỉ việc, cạnh tranh
+                4. **Điều khoản bất lợi cho NLĐ** (nếu có)
+                5. **So sánh với Luật Lao động 2019:** Có điều khoản nào vi phạm không?
+                6. **Câu hỏi nên hỏi trước khi ký**
+                7. **Đánh giá tổng thể:** Có nên ký không?
+                ⚠️ Lưu ý: Đây là tham khảo, không thay thế tư vấn pháp lý chính thức.
+                """.formatted(contractText);
+        return streamComplete(prompt);
+    }
 }

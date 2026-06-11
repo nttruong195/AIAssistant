@@ -2,23 +2,32 @@ import { Link, useLocation, NavLink } from 'react-router-dom'
 import { useState, useRef, useEffect } from 'react'
 
 const CALC_ITEMS = [
-  { path: '/',             label: 'Lãi kép',          icon: '📈', desc: 'Tính lãi kép theo thời gian' },
-  { path: '/home-loan',    label: 'Vay nhà',           icon: '🏠', desc: 'Tính trả góp mua nhà' },
-  { path: '/car-loan',     label: 'Vay xe',            icon: '🚗', desc: 'Tính trả góp mua xe' },
-  { path: '/salary',       label: 'Gross → Net',       icon: '💰', desc: 'Thuế TNCN & lương thực nhận' },
-  { path: '/savings',      label: 'Tiết kiệm',         icon: '🏦', desc: 'Lãi suất tiết kiệm ngân hàng' },
-  { path: '/goal-planner', label: 'Mục tiêu tài chính',icon: '🎯', desc: 'Cần tiết kiệm bao nhiêu/tháng' },
-  { path: '/rent-vs-buy',  label: 'Thuê vs Mua nhà',   icon: '🏘️', desc: 'Nên thuê hay mua nhà?' },
-  { path: '/roi',          label: 'ROI đầu tư',        icon: '📊', desc: 'Tỷ suất sinh lời' },
-  { path: '/insurance',    label: 'Bảo hiểm nhân thọ', icon: '🛡️', desc: 'Ước tính phí bảo hiểm' },
-  { path: '/budget',       label: 'Ngân sách 50/30/20',icon: '💼', desc: 'Phân bổ thu nhập hợp lý' },
+  { path: '/',                label: 'Lãi kép',           icon: '📈', desc: 'Tính lãi kép theo thời gian' },
+  { path: '/home-loan',       label: 'Vay nhà',            icon: '🏠', desc: 'Tính trả góp mua nhà' },
+  { path: '/car-loan',        label: 'Vay xe',             icon: '🚗', desc: 'Tính trả góp mua xe' },
+  { path: '/salary',          label: 'Gross → Net',        icon: '💰', desc: 'Thuế TNCN & lương thực nhận' },
+  { path: '/savings',         label: 'Tiết kiệm',          icon: '🏦', desc: 'Lãi suất tiết kiệm ngân hàng' },
+  { path: '/goal-planner',    label: 'Mục tiêu tài chính', icon: '🎯', desc: 'Cần tiết kiệm bao nhiêu/tháng' },
+  { path: '/rent-vs-buy',     label: 'Thuê vs Mua nhà',    icon: '🏘️', desc: 'Nên thuê hay mua nhà?' },
+  { path: '/roi',             label: 'ROI đầu tư',         icon: '📊', desc: 'Tỷ suất sinh lời' },
+  { path: '/insurance',       label: 'Bảo hiểm nhân thọ',  icon: '🛡️', desc: 'Ước tính phí bảo hiểm' },
+  { path: '/budget',          label: 'Ngân sách 50/30/20', icon: '💼', desc: 'Phân bổ thu nhập hợp lý' },
+  { path: '/tax-investment',  label: 'Thuế đầu tư',        icon: '🧾', desc: 'Thuế chứng khoán, BĐS, trái phiếu' },
+  { path: '/fire',            label: 'Nghỉ hưu sớm FIRE',  icon: '🔥', desc: 'Tính FIRE number & tuổi nghỉ hưu' },
+  { path: '/breakeven',       label: 'Điểm hòa vốn',       icon: '⚖️', desc: 'Cần bán bao nhiêu để hòa vốn' },
+  { path: '/inflation',       label: 'Lãi suất thực',      icon: '📉', desc: 'Lãi suất sau lạm phát (Fisher)' },
 ]
 
 const AI_ITEMS = [
-  { path: '/cv-analyzer',   label: 'Phân tích CV',  icon: '📄', desc: 'Đánh giá điểm mạnh/yếu' },
-  { path: '/cover-letter',  label: 'Thư xin việc',  icon: '✉️',  desc: 'Viết cover letter chuyên nghiệp' },
-  { path: '/email',         label: 'Viết Email',    icon: '📧', desc: 'Email công sở chuyên nghiệp' },
-  { path: '/jd',            label: 'Tạo JD',        icon: '📋', desc: 'Job description hoàn chỉnh' },
+  { path: '/cv-analyzer',        label: 'Phân tích CV',        icon: '📄', desc: 'Đánh giá điểm mạnh/yếu' },
+  { path: '/cover-letter',       label: 'Thư xin việc',        icon: '✉️',  desc: 'Viết cover letter chuyên nghiệp' },
+  { path: '/email',              label: 'Viết Email',          icon: '📧', desc: 'Email công sở chuyên nghiệp' },
+  { path: '/jd',                 label: 'Tạo JD',              icon: '📋', desc: 'Job description hoàn chỉnh' },
+  { path: '/linkedin',           label: 'LinkedIn Optimizer',  icon: '💼', desc: 'Tối ưu LinkedIn profile' },
+  { path: '/salary-negotiation', label: 'Đàm phán lương',      icon: '💰', desc: 'Script và chiến lược tăng lương' },
+  { path: '/interview-prep',     label: 'Luyện phỏng vấn',     icon: '🎤', desc: 'Câu hỏi + gợi ý trả lời theo JD' },
+  { path: '/performance-review', label: 'Performance Review',  icon: '⭐', desc: 'Viết self-review chuyên nghiệp' },
+  { path: '/contract-summary',   label: 'Phân tích HĐ LĐ',    icon: '📑', desc: 'Tóm tắt điều khoản hợp đồng' },
 ]
 
 function Dropdown({ label, items, pathname }) {

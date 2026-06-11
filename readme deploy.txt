@@ -15,7 +15,8 @@ AI_GEMINI_API_KEY     = <your_key>
 AI_GROQ_API_KEY       = <your_key>
 AI_OPENROUTER_API_KEY = <your_key>
 Bước 5: Deploy → lấy URL dạng https://finance-calculator-api.onrender.com
-
+Sau khi Vercel deploy xong, nhớ thêm env var APP_CORS_ALLOWED_ORIGINS trên Render Dashboard với value là URL Vercel của bạn.
+Available at your primary URL https://ai-assistant-ji4i.onrender.com
 2. Deploy Frontend lên Vercel
 Bước 1: Vào vercel.com → New Project → Import GitHub repo
 

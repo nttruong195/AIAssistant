@@ -75,13 +75,40 @@ public class AiController {
         return aiFallbackService.generateJd(request.position(), request.requirements());
     }
 
+    @PostMapping(value = "/linkedin", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    public SseEmitter optimizeLinkedin(@RequestBody LinkedInRequest request) {
+        return aiFallbackService.optimizeLinkedin(request.profileText());
+    }
+
+    @PostMapping(value = "/salary-negotiation", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    public SseEmitter salaryNegotiation(@RequestBody SalaryNegotiationRequest request) {
+        return aiFallbackService.salaryNegotiation(request.currentOffer(), request.candidateInfo(), request.marketInfo());
+    }
+
+    @PostMapping(value = "/interview-prep", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    public SseEmitter interviewPrep(@RequestBody InterviewPrepRequest request) {
+        return aiFallbackService.interviewPrep(request.jobDescription(), request.candidateBackground());
+    }
+
+    @PostMapping(value = "/performance-review", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    public SseEmitter performanceReview(@RequestBody PerformanceReviewRequest request) {
+        return aiFallbackService.performanceReview(request.achievements(), request.role(), request.period());
+    }
+
+    @PostMapping(value = "/contract-summary", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    public SseEmitter contractSummary(@RequestBody ContractSummaryRequest request) {
+        return aiFallbackService.summarizeContract(request.contractText());
+    }
+
     // ---- Request records ----
 
     record CvAnalyzeRequest(@NotBlank String cvText) {}
-
     record CoverLetterRequest(@NotBlank String jobDescription, @NotBlank String candidateInfo) {}
-
     record EmailRequest(@NotBlank String emailType, @NotBlank String context) {}
-
     record JdRequest(@NotBlank String position, String requirements) {}
+    record LinkedInRequest(@NotBlank String profileText) {}
+    record SalaryNegotiationRequest(@NotBlank String currentOffer, @NotBlank String candidateInfo, String marketInfo) {}
+    record InterviewPrepRequest(@NotBlank String jobDescription, String candidateBackground) {}
+    record PerformanceReviewRequest(@NotBlank String achievements, @NotBlank String role, @NotBlank String period) {}
+    record ContractSummaryRequest(@NotBlank String contractText) {}
 }

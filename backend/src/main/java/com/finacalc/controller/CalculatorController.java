@@ -27,12 +27,19 @@ public class CalculatorController {
     private final RoiService              roiService;
     private final InsuranceService        insuranceService;
     private final BudgetService           budgetService;
+    private final TaxInvestmentService    taxInvestmentService;
+    private final FireRetirementService   fireRetirementService;
+    private final BreakevenService        breakevenService;
+    private final InflationService        inflationService;
 
     public CalculatorController(CompoundInterestService compoundInterestService,
                                 LoanService loanService, SalaryService salaryService,
                                 SavingsService savingsService, GoalPlannerService goalPlannerService,
                                 RentVsBuyService rentVsBuyService, RoiService roiService,
-                                InsuranceService insuranceService, BudgetService budgetService) {
+                                InsuranceService insuranceService, BudgetService budgetService,
+                                TaxInvestmentService taxInvestmentService,
+                                FireRetirementService fireRetirementService,
+                                BreakevenService breakevenService, InflationService inflationService) {
         this.compoundInterestService = compoundInterestService;
         this.loanService             = loanService;
         this.salaryService           = salaryService;
@@ -42,6 +49,10 @@ public class CalculatorController {
         this.roiService              = roiService;
         this.insuranceService        = insuranceService;
         this.budgetService           = budgetService;
+        this.taxInvestmentService    = taxInvestmentService;
+        this.fireRetirementService   = fireRetirementService;
+        this.breakevenService        = breakevenService;
+        this.inflationService        = inflationService;
     }
 
     // ── Existing ──────────────────────────────────────────────
@@ -98,6 +109,29 @@ public class CalculatorController {
         return ResponseEntity.ok(budgetService.calculate(req.monthlyIncome()));
     }
 
+    @PostMapping("/tax-investment")
+    public ResponseEntity<?> taxInvestment(@RequestBody TaxInvestmentRequest req) {
+        return ResponseEntity.ok(taxInvestmentService.calculate(req.type(), req.principal(), req.profit(), req.rentalIncome()));
+    }
+
+    @PostMapping("/fire")
+    public ResponseEntity<?> fire(@RequestBody FireRequest req) {
+        return ResponseEntity.ok(fireRetirementService.calculate(req.currentAge(), req.currentSavings(),
+                req.monthlyExpenses(), req.annualReturn(), req.monthlySavings()));
+    }
+
+    @PostMapping("/breakeven")
+    public ResponseEntity<?> breakeven(@RequestBody BreakevenRequest req) {
+        return ResponseEntity.ok(breakevenService.calculate(req.fixedCosts(), req.variableCostPerUnit(),
+                req.pricePerUnit(), req.targetProfit()));
+    }
+
+    @PostMapping("/inflation")
+    public ResponseEntity<?> inflation(@RequestBody InflationRequest req) {
+        return ResponseEntity.ok(inflationService.calculate(req.initialAmount(), req.nominalRate(),
+                req.inflationRate(), req.years()));
+    }
+
     // ── Request records ───────────────────────────────────────
     record SavingsRequest(double principal, double annualRate, int termMonths, String interestType) {}
     record GoalRequest(double goalAmount, double currentSavings, int monthsLeft, double annualRate) {}
@@ -106,4 +140,8 @@ public class CalculatorController {
     record RoiRequest(double initialInvestment, double finalValue, int months) {}
     record InsuranceRequest(int age, String gender, double coverageAmount, int termYears) {}
     record BudgetRequest(double monthlyIncome) {}
+    record TaxInvestmentRequest(String type, double principal, double profit, double rentalIncome) {}
+    record FireRequest(int currentAge, double currentSavings, double monthlyExpenses, double annualReturn, double monthlySavings) {}
+    record BreakevenRequest(double fixedCosts, double variableCostPerUnit, double pricePerUnit, double targetProfit) {}
+    record InflationRequest(double initialAmount, double nominalRate, double inflationRate, int years) {}
 }
