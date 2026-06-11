@@ -59,28 +59,28 @@ function Dropdown({ label, items, pathname }) {
       </button>
 
       {open && (
-        <div className="absolute top-full left-0 mt-1.5 w-56 bg-white rounded-2xl shadow-lg border border-gray-100 py-1.5 z-50">
-          {items.map(({ path, label, icon, desc }) => (
-            <Link key={path} to={path}
-              onClick={() => setOpen(false)}
-              className={`flex items-start gap-3 px-4 py-2.5 transition-colors ${
-                pathname === path
-                  ? 'bg-blue-50 text-blue-700'
-                  : 'text-gray-700 hover:bg-gray-50'
-              }`}
-            >
-              <span className="text-lg leading-none mt-0.5">{icon}</span>
-              <div>
-                <p className={`text-sm font-medium leading-tight ${pathname === path ? 'text-blue-700' : ''}`}>
-                  {label}
-                </p>
-                {desc && <p className="text-xs text-gray-400 mt-0.5">{desc}</p>}
-              </div>
-              {pathname === path && (
-                <span className="ml-auto text-blue-500 text-xs mt-0.5">●</span>
-              )}
-            </Link>
-          ))}
+        <div className="absolute top-full left-0 mt-1.5 bg-white rounded-2xl shadow-lg border border-gray-100 py-1.5 z-50"
+          style={{ width: items.length > 6 ? '480px' : '224px' }}>
+          <div className={items.length > 6 ? 'grid grid-cols-2' : ''}>
+            {items.map(({ path, label, icon, desc }) => (
+              <Link key={path} to={path}
+                onClick={() => setOpen(false)}
+                className={`flex items-start gap-3 px-4 py-2.5 transition-colors ${
+                  pathname === path
+                    ? 'bg-blue-50 text-blue-700'
+                    : 'text-gray-700 hover:bg-gray-50'
+                }`}
+              >
+                <span className="text-lg leading-none mt-0.5">{icon}</span>
+                <div className="min-w-0">
+                  <p className={`text-sm font-medium leading-tight ${pathname === path ? 'text-blue-700' : ''}`}>
+                    {label}
+                  </p>
+                  {desc && <p className="text-xs text-gray-400 mt-0.5 leading-tight">{desc}</p>}
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       )}
     </div>
