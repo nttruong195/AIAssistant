@@ -2,23 +2,32 @@ import { Link, useLocation, NavLink } from 'react-router-dom'
 import { useState, useRef, useEffect } from 'react'
 
 const CALC_ITEMS = [
-  { path: '/',             label: 'Lãi kép',          icon: '📈', desc: 'Tính lãi kép theo thời gian' },
-  { path: '/home-loan',    label: 'Vay nhà',           icon: '🏠', desc: 'Tính trả góp mua nhà' },
-  { path: '/car-loan',     label: 'Vay xe',            icon: '🚗', desc: 'Tính trả góp mua xe' },
-  { path: '/salary',       label: 'Gross → Net',       icon: '💰', desc: 'Thuế TNCN & lương thực nhận' },
-  { path: '/savings',      label: 'Tiết kiệm',         icon: '🏦', desc: 'Lãi suất tiết kiệm ngân hàng' },
-  { path: '/goal-planner', label: 'Mục tiêu tài chính',icon: '🎯', desc: 'Cần tiết kiệm bao nhiêu/tháng' },
-  { path: '/rent-vs-buy',  label: 'Thuê vs Mua nhà',   icon: '🏘️', desc: 'Nên thuê hay mua nhà?' },
-  { path: '/roi',          label: 'ROI đầu tư',        icon: '📊', desc: 'Tỷ suất sinh lời' },
-  { path: '/insurance',    label: 'Bảo hiểm nhân thọ', icon: '🛡️', desc: 'Ước tính phí bảo hiểm' },
-  { path: '/budget',       label: 'Ngân sách 50/30/20',icon: '💼', desc: 'Phân bổ thu nhập hợp lý' },
+  { path: '/',                label: 'Lãi kép',           icon: '📈', desc: 'Tính lãi kép theo thời gian' },
+  { path: '/home-loan',       label: 'Vay nhà',            icon: '🏠', desc: 'Tính trả góp mua nhà' },
+  { path: '/car-loan',        label: 'Vay xe',             icon: '🚗', desc: 'Tính trả góp mua xe' },
+  { path: '/salary',          label: 'Gross → Net',        icon: '💰', desc: 'Thuế TNCN & lương thực nhận' },
+  { path: '/savings',         label: 'Tiết kiệm',          icon: '🏦', desc: 'Lãi suất tiết kiệm ngân hàng' },
+  { path: '/goal-planner',    label: 'Mục tiêu tài chính', icon: '🎯', desc: 'Cần tiết kiệm bao nhiêu/tháng' },
+  { path: '/rent-vs-buy',     label: 'Thuê vs Mua nhà',    icon: '🏘️', desc: 'Nên thuê hay mua nhà?' },
+  { path: '/roi',             label: 'ROI đầu tư',         icon: '📊', desc: 'Tỷ suất sinh lời' },
+  { path: '/insurance',       label: 'Bảo hiểm nhân thọ',  icon: '🛡️', desc: 'Ước tính phí bảo hiểm' },
+  { path: '/budget',          label: 'Ngân sách 50/30/20', icon: '💼', desc: 'Phân bổ thu nhập hợp lý' },
+  { path: '/tax-investment',  label: 'Thuế đầu tư',        icon: '🧾', desc: 'Thuế chứng khoán, BĐS, trái phiếu' },
+  { path: '/fire',            label: 'Nghỉ hưu sớm FIRE',  icon: '🔥', desc: 'Tính FIRE number & tuổi nghỉ hưu' },
+  { path: '/breakeven',       label: 'Điểm hòa vốn',       icon: '⚖️', desc: 'Cần bán bao nhiêu để hòa vốn' },
+  { path: '/inflation',       label: 'Lãi suất thực',      icon: '📉', desc: 'Lãi suất sau lạm phát (Fisher)' },
 ]
 
 const AI_ITEMS = [
-  { path: '/cv-analyzer',   label: 'Phân tích CV',  icon: '📄', desc: 'Đánh giá điểm mạnh/yếu' },
-  { path: '/cover-letter',  label: 'Thư xin việc',  icon: '✉️',  desc: 'Viết cover letter chuyên nghiệp' },
-  { path: '/email',         label: 'Viết Email',    icon: '📧', desc: 'Email công sở chuyên nghiệp' },
-  { path: '/jd',            label: 'Tạo JD',        icon: '📋', desc: 'Job description hoàn chỉnh' },
+  { path: '/cv-analyzer',        label: 'Phân tích CV',        icon: '📄', desc: 'Đánh giá điểm mạnh/yếu' },
+  { path: '/cover-letter',       label: 'Thư xin việc',        icon: '✉️',  desc: 'Viết cover letter chuyên nghiệp' },
+  { path: '/email',              label: 'Viết Email',          icon: '📧', desc: 'Email công sở chuyên nghiệp' },
+  { path: '/jd',                 label: 'Tạo JD',              icon: '📋', desc: 'Job description hoàn chỉnh' },
+  { path: '/linkedin',           label: 'LinkedIn Optimizer',  icon: '💼', desc: 'Tối ưu LinkedIn profile' },
+  { path: '/salary-negotiation', label: 'Đàm phán lương',      icon: '💰', desc: 'Script và chiến lược tăng lương' },
+  { path: '/interview-prep',     label: 'Luyện phỏng vấn',     icon: '🎤', desc: 'Câu hỏi + gợi ý trả lời theo JD' },
+  { path: '/performance-review', label: 'Performance Review',  icon: '⭐', desc: 'Viết self-review chuyên nghiệp' },
+  { path: '/contract-summary',   label: 'Phân tích HĐ LĐ',    icon: '📑', desc: 'Tóm tắt điều khoản hợp đồng' },
 ]
 
 function Dropdown({ label, items, pathname }) {
@@ -50,28 +59,28 @@ function Dropdown({ label, items, pathname }) {
       </button>
 
       {open && (
-        <div className="absolute top-full left-0 mt-1.5 w-56 bg-white rounded-2xl shadow-lg border border-gray-100 py-1.5 z-50">
-          {items.map(({ path, label, icon, desc }) => (
-            <Link key={path} to={path}
-              onClick={() => setOpen(false)}
-              className={`flex items-start gap-3 px-4 py-2.5 transition-colors ${
-                pathname === path
-                  ? 'bg-blue-50 text-blue-700'
-                  : 'text-gray-700 hover:bg-gray-50'
-              }`}
-            >
-              <span className="text-lg leading-none mt-0.5">{icon}</span>
-              <div>
-                <p className={`text-sm font-medium leading-tight ${pathname === path ? 'text-blue-700' : ''}`}>
-                  {label}
-                </p>
-                {desc && <p className="text-xs text-gray-400 mt-0.5">{desc}</p>}
-              </div>
-              {pathname === path && (
-                <span className="ml-auto text-blue-500 text-xs mt-0.5">●</span>
-              )}
-            </Link>
-          ))}
+        <div className="absolute top-full left-0 mt-1.5 bg-white rounded-2xl shadow-lg border border-gray-100 py-1.5 z-50"
+          style={{ width: items.length > 6 ? '480px' : '224px' }}>
+          <div className={items.length > 6 ? 'grid grid-cols-2' : ''}>
+            {items.map(({ path, label, icon, desc }) => (
+              <Link key={path} to={path}
+                onClick={() => setOpen(false)}
+                className={`flex items-start gap-3 px-4 py-2.5 transition-colors ${
+                  pathname === path
+                    ? 'bg-blue-50 text-blue-700'
+                    : 'text-gray-700 hover:bg-gray-50'
+                }`}
+              >
+                <span className="text-lg leading-none mt-0.5">{icon}</span>
+                <div className="min-w-0">
+                  <p className={`text-sm font-medium leading-tight ${pathname === path ? 'text-blue-700' : ''}`}>
+                    {label}
+                  </p>
+                  {desc && <p className="text-xs text-gray-400 mt-0.5 leading-tight">{desc}</p>}
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       )}
     </div>

@@ -1,6 +1,5 @@
 .gradle/
 build/
 *.class
-src/main/resources/application.properties
 run.bat
 src/main/resources/application-*.properties
