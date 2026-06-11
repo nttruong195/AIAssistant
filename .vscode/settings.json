@@ -1,0 +1,9 @@
+{
+  "java.import.gradle.enabled": true,
+  "java.import.gradle.wrapper.enabled": true,
+  "java.import.gradle.projectsRoot": "${workspaceFolder}/backend",
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.project.sourcePaths": ["backend/src/main/java"],
+  "editor.formatOnSave": true
+}
