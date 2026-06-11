@@ -55,6 +55,12 @@ public class CalculatorController {
         this.inflationService        = inflationService;
     }
 
+    // ── Health check ──────────────────────────────────────────
+    @GetMapping("/ping")
+    public ResponseEntity<String> ping() {
+        return ResponseEntity.ok("pong");
+    }
+
     // ── Existing ──────────────────────────────────────────────
     @PostMapping("/compound-interest")
     public ResponseEntity<CompoundInterestResponse> compoundInterest(@Valid @RequestBody CompoundInterestRequest req) {
