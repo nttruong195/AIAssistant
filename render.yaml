@@ -1,10 +1,9 @@
 services:
   - type: web
     name: finance-calculator-api
-    env: java
+    env: docker
     rootDir: backend
-    buildCommand: ./gradlew bootJar
-    startCommand: java -jar build/libs/finance-calculator.jar
+    dockerfilePath: ./Dockerfile
     envVars:
       - key: AI_GEMINI_API_KEY
         sync: false
