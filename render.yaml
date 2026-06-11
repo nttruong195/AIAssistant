@@ -20,4 +20,4 @@ services:
       - key: AI_OPENROUTER_API_KEY
         sync: false
       - key: APP_CORS_ALLOWED_ORIGINS
-        value: https://your-app.vercel.app
+        value: https://ai-assistant-six-wine.vercel.app
