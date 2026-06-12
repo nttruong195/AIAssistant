@@ -59,7 +59,7 @@ export default function App() {
         </Routes>
       </main>
       <footer className="text-center text-xs text-gray-300 py-8 mt-8 border-t border-gray-100">
-        <span className="font-semibold text-gray-400">CareerAI</span> &nbsp;·&nbsp; Công cụ tham khảo, không phải tư vấn chuyên nghiệp
+        <span className="font-semibold text-gray-400">Assistant AI</span> &nbsp;·&nbsp; Công cụ tham khảo, không phải tư vấn chuyên nghiệp
       </footer>
     </div>
   )

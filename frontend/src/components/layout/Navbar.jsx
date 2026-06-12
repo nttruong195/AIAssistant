@@ -101,7 +101,7 @@ export default function Navbar() {
               <span className="text-white text-xs font-bold">C</span>
             </div>
             <span className="font-bold text-gray-900 text-base tracking-tight">
-              Career<span className="text-blue-600">AI</span>
+              Assistant<span className="text-blue-600">AI</span>
             </span>
           </Link>
 
