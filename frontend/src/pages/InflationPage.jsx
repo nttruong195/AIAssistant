@@ -100,6 +100,20 @@ export default function InflationPage() {
           </div>
         )}
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Lãi suất thực là gì?</h2>
+          <p>Lãi suất thực (real interest rate) là lãi suất sau khi đã trừ lạm phát, phản ánh sức mua thực sự tăng lên. Theo phương trình Fisher: Lãi suất thực ≈ Lãi suất danh nghĩa – Lạm phát. Nếu gửi tiết kiệm 6%/năm nhưng lạm phát 4%, lãi suất thực chỉ còn ~2%.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Lạm phát Việt Nam hiện nay bao nhiêu?</h3><p className="mt-1">Trung bình 3–4%/năm trong giai đoạn 2020–2024. CPI được công bố hàng tháng bởi Tổng cục Thống kê.</p></div>
+            <div><h3 className="font-medium text-gray-700">Gửi tiết kiệm có thắng lạm phát không?</h3><p className="mt-1">Khó. Lãi suất tiết kiệm thực tế sau lạm phát thường chỉ 1–2%/năm, không đủ để tăng tài sản.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

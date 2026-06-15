@@ -140,6 +140,20 @@ export default function CvAnalyzerPage() {
           )}
         </div>
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Phân tích CV bằng AI</h2>
+          <p>Công cụ phân tích CV sử dụng trí tuệ nhân tạo để đánh giá điểm mạnh, điểm yếu và đề xuất cải thiện hồ sơ xin việc. Hỗ trợ upload file PDF, DOCX hoặc dán text trực tiếp.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">AI phân tích những gì trong CV?</h3><p className="mt-1">Cấu trúc, thành tích (có số liệu chưa), từ khóa phù hợp ngành, lỗi phổ biến cần tránh, và gợi ý cải thiện cụ thể.</p></div>
+            <div><h3 className="font-medium text-gray-700">CV tốt cần những gì?</h3><p className="mt-1">Thành tích cụ thể kèm số liệu, từ khóa phù hợp JD, định dạng rõ ràng, không quá 2 trang, tập trung vào 5–7 năm gần nhất.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

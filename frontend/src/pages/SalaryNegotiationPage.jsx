@@ -63,6 +63,20 @@ export default function SalaryNegotiationPage() {
           )}
         </div>
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Đàm phán lương hiệu quả</h2>
+          <p>Đàm phán lương là kỹ năng quan trọng — người biết đàm phán có thể tăng thu nhập 10–30% so với offer ban đầu. AI cung cấp script đàm phán và chiến lược phù hợp với tình huống của bạn.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Khi nào nên đàm phán lương?</h3><p className="mt-1">Luôn đàm phán khi nhận offer mới. Nếu đang làm: đàm phán sau 1 năm hoặc sau khi hoàn thành dự án lớn.</p></div>
+            <div><h3 className="font-medium text-gray-700">Nên đề xuất mức lương bao nhiêu?</h3><p className="mt-1">Research thị trường trước (TopCV Salary, LinkedIn Salary). Đề xuất cao hơn mục tiêu 10–15% để có room thương lượng.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

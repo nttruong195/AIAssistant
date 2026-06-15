@@ -49,6 +49,20 @@ export default function ContractSummaryPage() {
           )}
         </div>
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Phân tích hợp đồng lao động</h2>
+          <p>Hợp đồng lao động là văn bản pháp lý ràng buộc quyền và nghĩa vụ của cả hai bên. AI tóm tắt các điều khoản quan trọng và cảnh báo những điều khoản bất lợi cần chú ý trước khi ký.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Cần chú ý điều khoản nào trong HĐLĐ?</h3><p className="mt-1">Thời gian thử việc và lương thử việc, điều khoản cạnh tranh (non-compete), thời hạn báo trước khi nghỉ, quy định thưởng/hoa hồng.</p></div>
+            <div><h3 className="font-medium text-gray-700">Hợp đồng thử việc có khác HĐLĐ không?</h3><p className="mt-1">Có. Hợp đồng thử việc tối đa 60 ngày (180 ngày cho công việc quản lý). Lương thử việc tối thiểu 85% lương chính thức.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

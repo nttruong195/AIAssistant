@@ -79,6 +79,20 @@ export default function InsurancePage() {
           </ResultCard>
         )}
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Bảo hiểm nhân thọ là gì?</h2>
+          <p>Bảo hiểm nhân thọ bảo vệ tài chính cho gia đình khi người trụ cột gặp rủi ro tử vong hoặc thương tật. Mức bảo hiểm khuyến nghị thường bằng 10 lần thu nhập năm để gia đình duy trì cuộc sống trong 10 năm.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Nên mua bảo hiểm bao nhiêu?</h3><p className="mt-1">Tối thiểu bằng 5–10 lần thu nhập năm, cộng thêm các khoản nợ hiện có (vay nhà, vay xe).</p></div>
+            <div><h3 className="font-medium text-gray-700">Bảo hiểm nhân thọ và bảo hiểm nhân thọ kết hợp đầu tư khác gì?</h3><p className="mt-1">Bảo hiểm thuần túy (term life) phí thấp, bảo vệ cao. Bảo hiểm kết hợp đầu tư phí cao hơn nhưng tích lũy giá trị tiền mặt.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

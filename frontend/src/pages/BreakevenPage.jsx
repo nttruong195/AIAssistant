@@ -96,6 +96,20 @@ export default function BreakevenPage() {
           </div>
         )}
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Điểm hòa vốn là gì?</h2>
+          <p>Điểm hòa vốn (break-even point) là mức doanh thu hoặc số lượng bán hàng tối thiểu để tổng doanh thu bằng tổng chi phí, tức là không lãi không lỗ. Đây là chỉ số quan trọng cho bất kỳ kế hoạch kinh doanh nào.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Công thức tính điểm hòa vốn?</h3><p className="mt-1">BEP (đơn vị) = Chi phí cố định / (Giá bán – Chi phí biến đổi/đơn vị). BEP (doanh thu) = Chi phí cố định / Tỷ lệ lãi gộp.</p></div>
+            <div><h3 className="font-medium text-gray-700">Làm sao giảm điểm hòa vốn?</h3><p className="mt-1">Tăng giá bán, giảm chi phí biến đổi/đơn vị, hoặc giảm chi phí cố định (thuê mặt bằng, lương cố định).</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

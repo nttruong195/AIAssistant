@@ -78,6 +78,20 @@ export default function GoalPlannerPage() {
           </div>
         )}
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Lập kế hoạch tài chính theo mục tiêu</h2>
+          <p>Thay vì tiết kiệm ngẫu nhiên, hãy xác định mục tiêu cụ thể (mua nhà, du học, nghỉ hưu) và tính ngược lại số tiền cần tiết kiệm mỗi tháng. Công cụ này áp dụng công thức lãi kép để tính số tiền góp tối thiểu.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Nên đặt mục tiêu bao nhiêu năm?</h3><p className="mt-1">Mục tiêu ngắn hạn (&lt;3 năm): gửi tiết kiệm. Mục tiêu dài hạn (&gt;5 năm): đầu tư chứng khoán/quỹ mở để hưởng lãi kép cao hơn.</p></div>
+            <div><h3 className="font-medium text-gray-700">Lạm phát ảnh hưởng thế nào?</h3><p className="mt-1">Nên cộng thêm 3–5% vào mục tiêu để bù đắp lạm phát hàng năm tại Việt Nam.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

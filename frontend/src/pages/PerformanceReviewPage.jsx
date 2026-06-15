@@ -67,6 +67,20 @@ export default function PerformanceReviewPage() {
           )}
         </div>
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Viết self-review chuyên nghiệp</h2>
+          <p>Performance review tự đánh giá (self-review) là cơ hội để thể hiện đóng góp và đặt mục tiêu phát triển. AI giúp bạn viết self-review có số liệu, cụ thể và thuyết phục với quản lý.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Self-review nên tập trung vào gì?</h3><p className="mt-1">Thành tích cụ thể có số liệu, bài học từ thất bại (growth mindset), kế hoạch phát triển rõ ràng cho kỳ tiếp theo.</p></div>
+            <div><h3 className="font-medium text-gray-700">Nên dài bao nhiêu?</h3><p className="mt-1">300–500 từ. Súc tích, tập trung vào top 3–5 thành tích nổi bật thay vì liệt kê tất cả mọi thứ.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

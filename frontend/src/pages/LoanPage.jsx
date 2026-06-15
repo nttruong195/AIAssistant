@@ -114,6 +114,25 @@ export default function LoanPage({ type }) {
           </div>
         )}
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Vay mua nhà là gì?</h2>
+          <p>Vay mua nhà (mortgage) là khoản vay dài hạn từ ngân hàng để mua bất động sản. Người vay trả góp hàng tháng gồm cả gốc lẫn lãi trong 10–25 năm. Tại Việt Nam, lãi suất vay nhà thường từ 8–12%/năm tùy ngân hàng.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Phương thức trả nợ</h2>
+          <p>Trả nợ cố định (annuity): số tiền trả mỗi tháng bằng nhau, phần lãi giảm dần theo thời gian. Trả nợ dư nợ giảm dần (declining): gốc trả đều, lãi giảm dần nên tổng tiền trả mỗi tháng giảm dần. Phương thức dư nợ giảm dần thường tiết kiệm lãi tổng hơn.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Nên vay bao nhiêu % giá trị nhà?</h3><p className="mt-1">Thông thường ngân hàng cho vay tối đa 70–80% giá trị tài sản. Bạn cần có ít nhất 20–30% vốn tự có.</p></div>
+            <div><h3 className="font-medium text-gray-700">Lãi suất ưu đãi bao lâu?</h3><p className="mt-1">Thường 1–3 năm đầu được hưởng lãi suất ưu đãi thấp hơn, sau đó chuyển sang lãi suất thả nổi theo thị trường.</p></div>
+            <div><h3 className="font-medium text-gray-700">Trả trước hạn có phí không?</h3><p className="mt-1">Hầu hết ngân hàng tính phí phạt trả nợ trước hạn 1–3% trên số dư còn lại trong 3–5 năm đầu.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

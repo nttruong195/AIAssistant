@@ -83,6 +83,20 @@ export default function BudgetPage() {
           </>
         )}
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Quy tắc ngân sách 50/30/20</h2>
+          <p>Quy tắc 50/30/20 do Elizabeth Warren đề xuất: 50% thu nhập cho nhu cầu thiết yếu (nhà ở, ăn uống, đi lại), 30% cho mong muốn cá nhân (giải trí, mua sắm), 20% cho tiết kiệm và trả nợ. Đây là nguyên tắc đơn giản để quản lý tài chính cá nhân hiệu quả.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Có thể điều chỉnh tỷ lệ không?</h3><p className="mt-1">Có. Nếu sống ở thành phố lớn chi phí cao, có thể dùng 60/20/20. Quan trọng là luôn tiết kiệm tối thiểu 20%.</p></div>
+            <div><h3 className="font-medium text-gray-700">Tính trên lương Gross hay Net?</h3><p className="mt-1">Tính trên lương Net — số tiền thực nhận vào tay mỗi tháng.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

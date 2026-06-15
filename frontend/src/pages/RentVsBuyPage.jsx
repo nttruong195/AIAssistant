@@ -92,6 +92,20 @@ export default function RentVsBuyPage() {
           </div>
         )}
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Thuê nhà hay mua nhà — bài toán tài chính</h2>
+          <p>Quyết định thuê hay mua nhà phụ thuộc vào nhiều yếu tố: giá nhà, lãi suất vay, tăng giá bất động sản, chi phí cơ hội của vốn tự có và kế hoạch sinh sống dài hạn. Không có câu trả lời đúng chung cho tất cả.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Khi nào nên mua nhà?</h3><p className="mt-1">Khi có ít nhất 30% vốn, dự định ở ≥10 năm, tổng chi phí sở hữu nhà ≤ 35% thu nhập hàng tháng.</p></div>
+            <div><h3 className="font-medium text-gray-700">Chi phí ẩn khi mua nhà là gì?</h3><p className="mt-1">Thuế, phí công chứng, bảo hiểm tài sản, phí quản lý chung cư, sửa chữa — thường 1–2% giá trị nhà mỗi năm.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

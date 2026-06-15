@@ -46,6 +46,20 @@ export default function LinkedInPage() {
           )}
         </div>
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Tối ưu LinkedIn profile</h2>
+          <p>LinkedIn là mạng xã hội nghề nghiệp lớn nhất thế giới với hơn 1 tỷ người dùng. Profile LinkedIn tốt giúp bạn được nhà tuyển dụng tìm thấy và tiếp cận cơ hội việc làm chủ động.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">LinkedIn có quan trọng ở Việt Nam không?</h3><p className="mt-1">Ngày càng quan trọng, đặc biệt với công ty nước ngoài, startup và vị trí cấp cao. Nhiều recruiter tìm ứng viên trực tiếp qua LinkedIn.</p></div>
+            <div><h3 className="font-medium text-gray-700">Headline LinkedIn nên viết gì?</h3><p className="mt-1">Không chỉ ghi chức danh — hãy nêu giá trị bạn mang lại. Ví dụ: "Marketing Manager | Tăng trưởng doanh thu 200% qua digital marketing".</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

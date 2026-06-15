@@ -108,6 +108,20 @@ export default function TaxInvestmentPage() {
           </div>
         )}
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Thuế đầu tư tại Việt Nam</h2>
+          <p>Nhà đầu tư cá nhân tại Việt Nam phải nộp thuế: chứng khoán 0.1% trên giá trị bán (không tính lãi/lỗ), bất động sản 2% trên giá chuyển nhượng, trái phiếu và cổ tức 5% thuế TNCN. Biết trước thuế giúp tính toán lợi nhuận thực tế chính xác hơn.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Chứng khoán lỗ có phải nộp thuế không?</h3><p className="mt-1">Có — thuế 0.1% tính trên doanh số bán, không phân biệt lãi hay lỗ.</p></div>
+            <div><h3 className="font-medium text-gray-700">Thuế BĐS tính thế nào?</h3><p className="mt-1">2% × giá chuyển nhượng ghi trên hợp đồng. Nếu giá hợp đồng thấp hơn giá thị trường, cơ quan thuế có thể áp giá thị trường.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

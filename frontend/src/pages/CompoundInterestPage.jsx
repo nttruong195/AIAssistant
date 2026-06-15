@@ -72,6 +72,25 @@ export default function CompoundInterestPage() {
           </div>
         )}
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Lãi kép là gì?</h2>
+          <p>Lãi kép (compound interest) là hình thức tính lãi mà tiền lãi được cộng vào vốn gốc sau mỗi kỳ, tạo ra lãi cho cả phần lãi trước đó. Đây là nguyên lý cốt lõi của đầu tư dài hạn và tích lũy tài sản.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Công thức tính lãi kép</h2>
+          <p>A = P × (1 + r/n)^(n×t), trong đó P là vốn gốc, r là lãi suất năm, n là số lần ghép lãi trong năm, t là thời gian (năm). Công cụ này tự động tính toán và hiển thị biểu đồ tăng trưởng tài sản theo từng năm.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Lãi kép khác lãi đơn như thế nào?</h3><p className="mt-1">Lãi đơn chỉ tính lãi trên vốn gốc ban đầu. Lãi kép tính lãi cả trên vốn lẫn phần lãi đã tích lũy — hiệu quả hơn rõ rệt sau nhiều năm.</p></div>
+            <div><h3 className="font-medium text-gray-700">Tần suất ghép lãi ảnh hưởng thế nào?</h3><p className="mt-1">Ghép lãi càng nhiều lần trong năm (hàng tháng, hàng ngày) thì tổng tiền cuối kỳ càng cao do lãi được tính và cộng dồn thường xuyên hơn.</p></div>
+            <div><h3 className="font-medium text-gray-700">Nên đầu tư bao nhiêu mỗi tháng?</h3><p className="mt-1">Theo quy tắc 50/30/20, bạn nên tiết kiệm ít nhất 20% thu nhập mỗi tháng. Kết hợp với lãi kép, ngay cả số tiền nhỏ cũng tích lũy đáng kể sau 10–20 năm.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

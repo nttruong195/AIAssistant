@@ -108,6 +108,21 @@ export default function SavingsPage() {
           </div>
         )}
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Gửi tiết kiệm ngân hàng</h2>
+          <p>Tiết kiệm ngân hàng là hình thức gửi tiền an toàn được bảo hiểm tiền gửi lên đến 125 triệu đồng. Có hai hình thức: lãi cuối kỳ (nhận lãi khi đáo hạn) và lãi hàng tháng (nhận lãi định kỳ mỗi tháng).</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Lãi suất tiết kiệm hiện tại bao nhiêu?</h3><p className="mt-1">Các ngân hàng thương mại đang trả 4.5–6.5%/năm cho kỳ hạn 12 tháng (2024).</p></div>
+            <div><h3 className="font-medium text-gray-700">Rút trước hạn được không?</h3><p className="mt-1">Được, nhưng chỉ hưởng lãi suất không kỳ hạn (0.1–0.5%/năm), mất phần lớn tiền lãi.</p></div>
+            <div><h3 className="font-medium text-gray-700">Nên chọn lãi cuối kỳ hay lãi hàng tháng?</h3><p className="mt-1">Lãi cuối kỳ thường cao hơn 0.1–0.2%. Lãi hàng tháng phù hợp nếu cần dòng tiền định kỳ.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

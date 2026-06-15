@@ -72,6 +72,20 @@ export default function RoiPage() {
           </div>
         )}
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">ROI là gì?</h2>
+          <p>ROI (Return on Investment) là tỷ suất sinh lời trên vốn đầu tư, đo lường hiệu quả của một khoản đầu tư. ROI = (Lợi nhuận / Vốn đầu tư) × 100%. Công cụ cũng tính CAGR (tăng trưởng kép hàng năm) cho đầu tư nhiều năm.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">ROI bao nhiêu là tốt?</h3><p className="mt-1">So sánh với lãi suất gửi ngân hàng (~6%/năm). Chứng khoán thường đạt 10–15%/năm dài hạn. BĐS 8–12%/năm tại Việt Nam.</p></div>
+            <div><h3 className="font-medium text-gray-700">ROI và CAGR khác nhau thế nào?</h3><p className="mt-1">ROI là tổng %, CAGR là % trung bình mỗi năm. CAGR chính xác hơn khi so sánh đầu tư có thời gian khác nhau.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

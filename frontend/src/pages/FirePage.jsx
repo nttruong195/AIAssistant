@@ -104,6 +104,20 @@ export default function FirePage() {
           </div>
         )}
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">FIRE là gì?</h2>
+          <p>FIRE (Financial Independence, Retire Early) là phong trào nghỉ hưu sớm bằng cách tích lũy tài sản đủ lớn để sống bằng lợi tức đầu tư. FIRE Number = Chi tiêu năm × 25 (quy tắc 4%). Ví dụ: chi 15 triệu/tháng cần tích lũy 4.5 tỷ đồng.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Quy tắc 4% là gì?</h3><p className="mt-1">Rút 4% tài sản mỗi năm để chi tiêu — tỷ lệ này đủ bền vững qua 30+ năm theo nghiên cứu Trinity Study.</p></div>
+            <div><h3 className="font-medium text-gray-700">FIRE phù hợp với người Việt không?</h3><p className="mt-1">Có, nhưng cần điều chỉnh: lạm phát Việt Nam cao hơn, nên dùng tỷ lệ rút 3–3.5% để an toàn hơn.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

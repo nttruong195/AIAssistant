@@ -57,6 +57,20 @@ export default function CoverLetterPage() {
           )}
         </div>
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Thư xin việc chuyên nghiệp</h2>
+          <p>Cover letter là thư giới thiệu bản thân đi kèm CV, giúp nhà tuyển dụng hiểu lý do bạn phù hợp với vị trí. AI sẽ viết cover letter cá nhân hóa dựa trên JD và thông tin bạn cung cấp.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Cover letter có cần thiết không?</h3><p className="mt-1">Ở Việt Nam không bắt buộc, nhưng gửi kèm giúp bạn nổi bật hơn, đặc biệt với công ty nước ngoài.</p></div>
+            <div><h3 className="font-medium text-gray-700">Cover letter dài bao nhiêu?</h3><p className="mt-1">Tối đa 1 trang, 3–4 đoạn: mở đầu, kinh nghiệm phù hợp, lý do muốn gia nhập, kết thúc.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

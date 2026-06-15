@@ -55,6 +55,20 @@ export default function InterviewPrepPage() {
           )}
         </div>
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Luyện tập phỏng vấn xin việc</h2>
+          <p>Chuẩn bị kỹ cho phỏng vấn là yếu tố quyết định thành công. Công cụ tạo câu hỏi phỏng vấn thường gặp theo JD cụ thể và gợi ý cách trả lời theo phương pháp STAR (Situation, Task, Action, Result).</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Phương pháp STAR là gì?</h3><p className="mt-1">Cấu trúc trả lời câu hỏi hành vi: Situation (tình huống), Task (nhiệm vụ), Action (hành động bạn làm), Result (kết quả đạt được).</p></div>
+            <div><h3 className="font-medium text-gray-700">Nên hỏi lại gì sau phỏng vấn?</h3><p className="mt-1">Cơ hội phát triển, team culture, KPI của vị trí, quy trình onboarding. Tránh hỏi lương trước khi được hỏi.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

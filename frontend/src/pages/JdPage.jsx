@@ -56,6 +56,20 @@ export default function JdPage() {
           )}
         </div>
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Tạo Job Description chuyên nghiệp</h2>
+          <p>Job Description (JD) là bản mô tả công việc giúp thu hút đúng ứng viên. JD tốt cần rõ ràng về trách nhiệm, yêu cầu kỹ năng và quyền lợi. AI tạo JD chuẩn SEO cho các nền tảng tuyển dụng.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">JD tốt có gì?</h3><p className="mt-1">Tiêu đề rõ ràng, tóm tắt công ty, trách nhiệm cụ thể (5–8 điểm), yêu cầu bắt buộc vs mong muốn, quyền lợi hấp dẫn.</p></div>
+            <div><h3 className="font-medium text-gray-700">Nên đăng JD ở đâu?</h3><p className="mt-1">TopCV, Vietnamworks, LinkedIn, ITviec (cho IT), Cake.me (thiết kế, creative).</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

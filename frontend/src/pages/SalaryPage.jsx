@@ -134,6 +134,25 @@ export default function SalaryPage() {
           </div>
         )}
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Gross và Net là gì?</h2>
+          <p>Lương Gross là lương trước khấu trừ. Lương Net là số tiền thực nhận sau khi trừ bảo hiểm xã hội (8%), bảo hiểm y tế (1.5%), bảo hiểm thất nghiệp (1%) và thuế thu nhập cá nhân (TNCN) theo biểu lũy tiến 7 bậc.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Biểu thuế TNCN 2024</h2>
+          <p>Thuế TNCN áp dụng theo 7 bậc lũy tiến: 5% cho thu nhập chịu thuế đến 5 triệu/tháng, 10% từ 5–10 triệu, 15% từ 10–18 triệu, 20% từ 18–32 triệu, 25% từ 32–52 triệu, 30% từ 52–80 triệu, 35% trên 80 triệu. Giảm trừ gia cảnh bản thân 11 triệu/tháng, người phụ thuộc 4.4 triệu/tháng.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Giảm trừ gia cảnh là gì?</h3><p className="mt-1">Khoản được trừ khỏi thu nhập trước khi tính thuế. Bản thân 11 triệu/tháng, mỗi người phụ thuộc 4.4 triệu/tháng.</p></div>
+            <div><h3 className="font-medium text-gray-700">BHXH có bắt buộc không?</h3><p className="mt-1">Có. Người lao động đóng 8% BHXH, 1.5% BHYT, 1% BHTN. Chủ lao động đóng thêm phần của họ.</p></div>
+            <div><h3 className="font-medium text-gray-700">Lương Net tối thiểu là bao nhiêu?</h3><p className="mt-1">Lương tối thiểu vùng năm 2024: Vùng I (Hà Nội, TP.HCM) là 4.96 triệu/tháng.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

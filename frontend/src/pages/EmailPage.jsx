@@ -79,6 +79,20 @@ export default function EmailPage() {
           )}
         </div>
       </div>
+      {/* SEO Content */}
+      <div className="mt-12 border-t border-gray-100 pt-8 space-y-6 text-gray-600 text-sm leading-relaxed">
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Viết email công sở chuyên nghiệp</h2>
+          <p>Email công sở cần ngắn gọn, rõ ràng và chuyên nghiệp. AI hỗ trợ viết các loại email: xin việc, follow-up sau phỏng vấn, từ chối offer, xin tăng lương, báo cáo công việc.</p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">Câu hỏi thường gặp</h2>
+          <div className="space-y-3">
+            <div><h3 className="font-medium text-gray-700">Email xin việc cần có gì?</h3><p className="mt-1">Subject rõ ràng (tên vị trí + họ tên), giới thiệu ngắn, đính kèm CV, lời cảm ơn và CTA (mời phỏng vấn).</p></div>
+            <div><h3 className="font-medium text-gray-700">Nên gửi email lúc nào?</h3><p className="mt-1">Thứ 2–4, buổi sáng 8–10h hoặc sau bữa trưa 13–15h. Tránh thứ 6 chiều và cuối tuần.</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }
