@@ -101,7 +101,7 @@ export default function Navbar() {
               <span className="text-white text-xs font-bold">C</span>
             </div>
             <span className="font-bold text-gray-900 text-base tracking-tight">
-              Career<span className="text-blue-600">AI</span>
+              Assistant<span className="text-blue-600">AI</span>
             </span>
           </Link>
 
@@ -110,7 +110,7 @@ export default function Navbar() {
           <Dropdown label="Tài chính" items={CALC_ITEMS} pathname={pathname} />
           <Dropdown label="Hỗ trợ AI" items={AI_ITEMS} pathname={pathname} />
 
-          <div className="ml-auto flex items-center gap-1">
+          {/* <div className="ml-auto flex items-center gap-1">
             <Link to="/shop"
               className={`px-3.5 py-2 rounded-xl text-sm font-medium transition-all ${
                 pathname === '/shop'
@@ -127,7 +127,7 @@ export default function Navbar() {
               }`}>
               💬 Góp ý
             </Link>
-          </div>
+          </div> */}
 
 
         </div>
