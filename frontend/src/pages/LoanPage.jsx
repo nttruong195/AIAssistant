@@ -20,7 +20,7 @@ export default function LoanPage({ type }) {
 
   return (
     <div className="page-container">
-      <SEO title="Tính vay mua nhà <div className="page-container"> xe" description="Tính trả góp mua nhà, mua xe. Xem lịch trả nợ chi tiết từng tháng." path="/home-loan" />
+      <SEO title="Tính vay mua nhà & xe" description="Tính trả góp mua nhà, mua xe. Xem lịch trả nợ chi tiết từng tháng." path="/home-loan" />
       <h1 className="page-title">{isHome ? '🏠 Tính vay mua nhà' : '🚗 Tính vay mua xe'}</h1>
       <p className="page-subtitle">{isHome ? 'Lập kế hoạch tài chính mua nhà' : 'Tính toán chi phí vay mua xe'}</p>
 
