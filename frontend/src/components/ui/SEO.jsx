@@ -9,6 +9,7 @@ export default function SEO({ title, description, path = '' }) {
 
   return (
     <Helmet>
+      <meta name="google-site-verification" content="v8OSXyarxXwVomAJFm8g7Q5qzb34NhbQwrgoYf4LKK4" />
       <title>{fullTitle}</title>
       <meta name="description"        content={description} />
       <meta name="robots"             content="index, follow" />
