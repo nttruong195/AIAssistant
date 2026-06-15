@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async'
 
 const SITE_NAME = 'CareerAI'
-const BASE_URL  = 'https://careerai.vn' // thay bằng domain thật sau khi deploy
+const BASE_URL  = 'https://assitai.vercel.app'
 
 export default function SEO({ title, description, path = '' }) {
   const fullTitle = `${title} | ${SITE_NAME}`

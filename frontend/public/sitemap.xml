@@ -3,119 +3,119 @@
 
   <!-- Tài chính -->
   <url>
-    <loc>https://careerai.vn/</loc>
+    <loc>https://assitai.vercel.app/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/home-loan</loc>
+    <loc>https://assitai.vercel.app/home-loan</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/car-loan</loc>
+    <loc>https://assitai.vercel.app/car-loan</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/salary</loc>
+    <loc>https://assitai.vercel.app/salary</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/savings</loc>
+    <loc>https://assitai.vercel.app/savings</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/goal-planner</loc>
+    <loc>https://assitai.vercel.app/goal-planner</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/rent-vs-buy</loc>
+    <loc>https://assitai.vercel.app/rent-vs-buy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/roi</loc>
+    <loc>https://assitai.vercel.app/roi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/insurance</loc>
+    <loc>https://assitai.vercel.app/insurance</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/budget</loc>
+    <loc>https://assitai.vercel.app/budget</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/tax-investment</loc>
+    <loc>https://assitai.vercel.app/tax-investment</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/fire</loc>
+    <loc>https://assitai.vercel.app/fire</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/breakeven</loc>
+    <loc>https://assitai.vercel.app/breakeven</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/inflation</loc>
+    <loc>https://assitai.vercel.app/inflation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Hỗ trợ AI -->
   <url>
-    <loc>https://careerai.vn/cv-analyzer</loc>
+    <loc>https://assitai.vercel.app/cv-analyzer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/cover-letter</loc>
+    <loc>https://assitai.vercel.app/cover-letter</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/email</loc>
+    <loc>https://assitai.vercel.app/email</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/jd</loc>
+    <loc>https://assitai.vercel.app/jd</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/linkedin</loc>
+    <loc>https://assitai.vercel.app/linkedin</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/salary-negotiation</loc>
+    <loc>https://assitai.vercel.app/salary-negotiation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/interview-prep</loc>
+    <loc>https://assitai.vercel.app/interview-prep</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/performance-review</loc>
+    <loc>https://assitai.vercel.app/performance-review</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://careerai.vn/contract-summary</loc>
+    <loc>https://assitai.vercel.app/contract-summary</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
