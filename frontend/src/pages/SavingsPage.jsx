@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { formatVND, formatPercent, parseNumber } from '../utils/format'
 import NumberInput from '../components/ui/NumberInput'
@@ -41,6 +42,7 @@ export default function SavingsPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Tính lãi tiết kiệm ngân hàng" description="Tính lãi tiết kiệm ngân hàng theo kỳ hạn 1-24 tháng. So sánh lĩnh lãi cuối kỳ và hàng tháng." path="/savings" />
       <h1 className="page-title">🏦 Tính lãi tiết kiệm</h1>
       <p className="page-subtitle">Tính lãi suất tiết kiệm ngân hàng theo kỳ hạn</p>
 

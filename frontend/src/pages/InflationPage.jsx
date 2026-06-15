@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { formatVND, parseNumber } from '../utils/format'
 import NumberInput from '../components/ui/NumberInput'
@@ -39,6 +40,7 @@ export default function InflationPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Tính lãi suất thực sau lạm phát" description="Tính lãi suất thực sau lạm phát theo công thức Fisher." path="/inflation" />
       <h1 className="page-title">📉 Lãi Suất Thực Sau Lạm Phát</h1>
       <p className="page-subtitle">Tính lãi suất thực và sức mua của tiền theo công thức Fisher</p>
 

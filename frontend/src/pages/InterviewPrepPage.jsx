@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { useAi } from '../hooks/useAi'
 import AiOutputBox from '../components/ui/AiOutputBox'
@@ -17,6 +18,7 @@ export default function InterviewPrepPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Luyện phỏng vấn bằng AI" description="AI sinh câu hỏi phỏng vấn và gợi ý trả lời dựa trên JD và CV của bạn." path="/interview-prep" />
       <h1 className="page-title">🎤 Interview Prep</h1>
       <p className="page-subtitle">Nhập JD và background — AI sinh câu hỏi phỏng vấn thực tế kèm gợi ý trả lời</p>
 

@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { useAi } from '../hooks/useAi'
 import AiOutputBox from '../components/ui/AiOutputBox'
@@ -24,6 +25,7 @@ export default function EmailPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Viết email chuyên nghiệp bằng AI" description="AI viết email công sở chuyên nghiệp: xin nghỉ phép, xin tăng lương, cảm ơn sau phỏng vấn..." path="/email" />
       <h1 className="page-title">📧 Viết Email Chuyên Nghiệp</h1>
       <p className="page-subtitle">Chọn loại email, mô tả tình huống — AI viết hoàn chỉnh cho bạn.</p>
 

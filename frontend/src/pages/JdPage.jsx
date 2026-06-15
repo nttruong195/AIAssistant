@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { useAi } from '../hooks/useAi'
 import AiOutputBox from '../components/ui/AiOutputBox'
@@ -16,6 +17,7 @@ export default function JdPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Tạo Job Description bằng AI" description="AI tạo Job Description hoàn chỉnh chuyên nghiệp theo vị trí và yêu cầu." path="/jd" />
       <h1 className="page-title">📋 Tạo Job Description</h1>
       <p className="page-subtitle">Nhập tên vị trí và yêu cầu cơ bản — AI tạo JD hoàn chỉnh, chuyên nghiệp.</p>
 

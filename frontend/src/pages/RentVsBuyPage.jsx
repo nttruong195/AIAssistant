@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { formatVND, parseNumber } from '../utils/format'
 import NumberInput from '../components/ui/NumberInput'
@@ -35,6 +36,7 @@ export default function RentVsBuyPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Nên thuê hay mua nhà" description="Phân tích tài chính nên thuê hay mua nhà dựa trên thu nhập và giá nhà thực tế." path="/rent-vs-buy" />
       <h1 className="page-title">🏘️ Thuê vs Mua nhà</h1>
       <p className="page-subtitle">Phân tích tài chính: nên thuê hay mua nhà trong hoàn cảnh của bạn?</p>
 

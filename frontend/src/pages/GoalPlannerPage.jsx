@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { formatVND, parseNumber } from '../utils/format'
 import NumberInput from '../components/ui/NumberInput'
@@ -29,6 +30,7 @@ export default function GoalPlannerPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Quy hoạch mục tiêu tài chính" description="Tính số tiền cần tiết kiệm mỗi tháng để đạt mục tiêu tài chính." path="/goal-planner" />
       <h1 className="page-title">🎯 Quy hoạch mục tiêu tài chính</h1>
       <p className="page-subtitle">Tính số tiền cần tiết kiệm mỗi tháng để đạt mục tiêu</p>
 

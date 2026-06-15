@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { useAi } from '../hooks/useAi'
 import AiOutputBox from '../components/ui/AiOutputBox'
@@ -16,6 +17,7 @@ export default function CoverLetterPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Viết thư xin việc bằng AI" description="AI viết thư xin việc chuyên nghiệp dựa trên JD và thông tin ứng viên." path="/cover-letter" />
       <h1 className="page-title">✉️ Viết Thư Xin Việc</h1>
       <p className="page-subtitle">Nhập JD và thông tin của bạn — AI viết cover letter chuyên nghiệp trong vài giây.</p>
 

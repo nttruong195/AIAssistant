@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useSalary } from '../hooks/useSalary'
 import { TAX_BRACKETS, PIE_COLORS } from '../constants'
 import { formatVND } from '../utils/format'
@@ -24,6 +25,7 @@ export default function SalaryPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Tính lương Gross Net <div className="page-container"> thuế TNCN" description="Tính lương net từ gross, thuế TNCN theo bậc lũy tiến Việt Nam 2024." path="/salary" />
       <h1 className="page-title">💰 Gross → Net & Thuế TNCN</h1>
       <p className="page-subtitle">Tính lương thực nhận theo quy định Việt Nam 2024</p>
 

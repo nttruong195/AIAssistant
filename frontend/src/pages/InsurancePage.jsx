@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { formatVND, parseNumber } from '../utils/format'
 import NumberInput from '../components/ui/NumberInput'
@@ -27,6 +28,7 @@ export default function InsurancePage() {
 
   return (
     <div className="page-container">
+      <SEO title="Ước tính phí bảo hiểm nhân thọ" description="Ước tính phí bảo hiểm nhân thọ theo tuổi, giới tính và mức bảo vệ mong muốn." path="/insurance" />
       <h1 className="page-title">🛡️ Ước tính phí bảo hiểm nhân thọ</h1>
       <p className="page-subtitle">Ước tính phí bảo hiểm dựa trên tuổi, giới tính và mức bảo vệ mong muốn</p>
 

@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { useAi } from '../hooks/useAi'
 import AiOutputBox from '../components/ui/AiOutputBox'
@@ -15,6 +16,7 @@ export default function LinkedInPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Tối ưu LinkedIn bằng AI" description="AI tối ưu LinkedIn profile để thu hút nhà tuyển dụng và tăng cơ hội việc làm." path="/linkedin" />
       <h1 className="page-title">💼 LinkedIn Optimizer</h1>
       <p className="page-subtitle">Paste nội dung LinkedIn profile — AI phân tích và gợi ý cải thiện từng section</p>
 

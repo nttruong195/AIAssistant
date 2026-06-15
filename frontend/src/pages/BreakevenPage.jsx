@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { formatVND, parseNumber } from '../utils/format'
 import NumberInput from '../components/ui/NumberInput'
@@ -39,6 +40,7 @@ export default function BreakevenPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Tính điểm hòa vốn" description="Tính điểm hòa vốn - cần bán bao nhiêu sản phẩm để thu hồi chi phí." path="/breakeven" />
       <h1 className="page-title">⚖️ Tính Điểm Hòa Vốn</h1>
       <p className="page-subtitle">Tính doanh thu và số lượng cần bán để hòa vốn hoặc đạt lợi nhuận mục tiêu</p>
 

@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { formatVND, parseNumber } from '../utils/format'
 import NumberInput from '../components/ui/NumberInput'
@@ -41,6 +42,7 @@ export default function FirePage() {
 
   return (
     <div className="page-container">
+      <SEO title="Tính FIRE Number nghỉ hưu sớm" description="Tính FIRE Number và tuổi có thể nghỉ hưu sớm theo phương pháp Financial Independence." path="/fire" />
       <h1 className="page-title">🔥 Kế Hoạch Nghỉ Hưu Sớm (FIRE)</h1>
       <p className="page-subtitle">Tính toán khi nào bạn có thể nghỉ hưu tài chính theo nguyên tắc 4%</p>
 

@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { formatVND, parseNumber } from '../utils/format'
 import NumberInput from '../components/ui/NumberInput'
@@ -30,6 +31,7 @@ export default function RoiPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Tính ROI đầu tư" description="Tính ROI, lợi nhuận và tỷ suất sinh lời hàng năm của khoản đầu tư." path="/roi" />
       <h1 className="page-title">📊 Tính ROI đầu tư</h1>
       <p className="page-subtitle">Tính lợi nhuận và tỷ suất sinh lời hàng năm của khoản đầu tư</p>
 

@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useCompoundInterest } from '../hooks/useCompoundInterest'
 import { COMPOUND_FREQUENCY_OPTIONS } from '../constants'
 import { formatVND, formatPercent } from '../utils/format'
@@ -12,6 +13,7 @@ export default function CompoundInterestPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Tính lãi kép" description="Công cụ tính lãi kép online miễn phí. Xem sức mạnh của lãi kép theo thời gian." path="/" />
       <h1 className="page-title">📈 Tính lãi kép</h1>
       <p className="page-subtitle">Tính toán sức mạnh của lãi kép theo thời gian</p>
 

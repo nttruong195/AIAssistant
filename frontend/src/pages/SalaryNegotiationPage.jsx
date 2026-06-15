@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { useAi } from '../hooks/useAi'
 import AiOutputBox from '../components/ui/AiOutputBox'
@@ -17,6 +18,7 @@ export default function SalaryNegotiationPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Đàm phán lương bằng AI" description="AI tư vấn script và chiến lược đàm phán tăng lương hiệu quả." path="/salary-negotiation" />
       <h1 className="page-title">💰 Salary Negotiation Coach</h1>
       <p className="page-subtitle">AI tư vấn chiến lược đàm phán lương, script cụ thể và những điều nên/không nên nói</p>
 

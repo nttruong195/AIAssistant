@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState, useRef } from 'react'
 import AiOutputBox from '../components/ui/AiOutputBox'
 
@@ -69,6 +70,7 @@ export default function CvAnalyzerPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Phân tích CV bằng AI" description="AI phân tích CV tiếng Việt, đánh giá điểm mạnh yếu và gợi ý cải thiện." path="/cv-analyzer" />
       <h1 className="page-title">📄 Phân tích CV</h1>
       <p className="page-subtitle">Upload file hoặc dán text — AI phân tích điểm mạnh, điểm yếu và gợi ý cải thiện.</p>
 

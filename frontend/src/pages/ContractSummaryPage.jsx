@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { useAi } from '../hooks/useAi'
 import AiOutputBox from '../components/ui/AiOutputBox'
@@ -15,6 +16,7 @@ export default function ContractSummaryPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Phân tích hợp đồng lao động bằng AI" description="AI tóm tắt và phân tích điều khoản hợp đồng lao động bằng tiếng Việt." path="/contract-summary" />
       <h1 className="page-title">📑 Tóm Tắt Hợp Đồng Lao Động</h1>
       <p className="page-subtitle">Paste nội dung hợp đồng — AI highlight điều khoản quan trọng, rủi ro và so sánh Luật Lao động</p>
 

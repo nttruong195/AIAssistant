@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { formatVND, parseNumber } from '../utils/format'
 import NumberInput from '../components/ui/NumberInput'
@@ -32,6 +33,7 @@ export default function BudgetPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Quản lý ngân sách 50/30/20" description="Phân bổ thu nhập theo quy tắc 50/30/20 - nhu cầu thiết yếu, mong muốn, tiết kiệm." path="/budget" />
       <h1 className="page-title">💼 Quản lý ngân sách 50/30/20</h1>
       <p className="page-subtitle">Phân bổ thu nhập theo quy tắc tài chính phổ biến nhất thế giới</p>
 

@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { useAi } from '../hooks/useAi'
 import AiOutputBox from '../components/ui/AiOutputBox'
@@ -17,6 +18,7 @@ export default function PerformanceReviewPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Viết Performance Review bằng AI" description="AI viết self-review đánh giá hiệu suất cuối năm chuyên nghiệp." path="/performance-review" />
       <h1 className="page-title">⭐ Performance Review Writer</h1>
       <p className="page-subtitle">Nhập thành tích của bạn — AI viết self-review chuyên nghiệp, có số liệu và SMART goals</p>
 

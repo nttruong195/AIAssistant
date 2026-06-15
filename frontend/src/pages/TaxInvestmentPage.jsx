@@ -1,3 +1,4 @@
+import SEO from '../components/ui/SEO'
 import { useState } from 'react'
 import { formatVND, parseNumber } from '../utils/format'
 import NumberInput from '../components/ui/NumberInput'
@@ -44,6 +45,7 @@ export default function TaxInvestmentPage() {
 
   return (
     <div className="page-container">
+      <SEO title="Tính thuế đầu tư chứng khoán" description="Tính thuế chứng khoán, bất động sản, trái phiếu theo quy định Việt Nam." path="/tax-investment" />
       <h1 className="page-title">🧾 Thuế Thu Nhập Đầu Tư</h1>
       <p className="page-subtitle">Tính thuế TNCN từ chứng khoán, cho thuê BĐS, trái phiếu theo quy định Việt Nam</p>
 
